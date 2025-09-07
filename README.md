@@ -1,2 +1,6 @@
-# GodotMultithreadTest
-A test detailing the use of multiple threads in godot.
+A test reguarding the use of multiple threads in godot.
+
+
+
+Here you can see how I made a simple application in godot that can multithread.
+
