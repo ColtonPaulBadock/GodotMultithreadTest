@@ -1,32 +1,19 @@
+#This is the main script.
+#Runs "Node2D" of the main scene.
+#This script is part of the main thread.
+
 extends Node
 
-#Thread number one, branching off from the main application thread
-#This thread will run seperate from __process, as "_process" is part
-#of the main thread.
-var thread1 : Thread;
+#Thread, will run alongside the main thread in "_process()" of this function.
+var thread : Thread;
 
-#Runs once on program intialization
-func _ready() -> void:
-	
-	thread1 = Thread.new();
-	
-	thread1.start(supYo.bind());
+
+func _ready():
 	
 	pass;
 
 
-#Indefinite program loop
+
 func _process(delta: float) -> void:
-	
-	
-	return;
-
-
-#This function prints "sup yo"
-#in an infinite loop
-func supYo() -> void:
-	
-	while true:
-		print("Sup yo");
 	
 	pass;
